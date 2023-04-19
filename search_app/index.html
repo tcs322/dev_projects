@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <title>Search Me</title>
+  </head>
+  <body>
+    <main>
+      <h1 class="offscreen">Seach Me A Wikepedia Powered Search Engine</h1>
+      <section class="searchEntry">
+        <h2 class="offscreen">Search Term Entry</h2>
+        <div class="logo" aria-hidden="true">SearchMe</div>
+        <form id="searchBar" class="searchBar">
+          <label class="offscreen" for="search"
+            >Enter a search term of phrase</label
+          >
+          <input id="search" type="text" autocomplete="off" />
+          <div
+            id="clear"
+            class="none button clear"
+            role="button"
+            tabindex="0"
+            aria-label="Clear search terms"
+          >
+            <i class="fa-solid fa-x"></i>
+          </div>
+          <button
+            id="searchButton"
+            class="button searchButton"
+            type="submit"
+            aria-label="Submit button"
+          >
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
+      </section>
+      <section class="results">
+        <h2 class="offscreen">Search Results</h2>
+        <div class="statsBar">
+          <div id="stats" class="stats" aria-live="assertive"></div>
+        </div>
+        <div id="searchResults" class="searchResults">
+          <div class="resultItem">
+            <div class="resultTitle">
+              <a href="">Dachsund</a>
+              <div class="resultContent">
+                <div class="resultImage">
+                  <img
+                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/be/%EB%8B%A5%EC%8A%A4%ED%9B%88%ED%8A%B8%28%EB%8B%A8%EB%AA%A8%EC%A2%85%29_%28Dachshund_%28Short%29%29.jpg/200px-%EB%8B%A5%EC%8A%A4%ED%9B%88%ED%8A%B8%28%EB%8B%A8%EB%AA%A8%EC%A2%85%29_%28Dachshund_%28Short%29%29.jpg"
+                    alt="Dachsund"
+                  />
+                </div>
+                <div class="resultText">
+                  <p class="resultDescription">
+                    Dachshund ou teckel[Nota] (em alemão: Dackel), também
+                    apelidado de cão-salsicha,[1] é uma raça de cães oriunda da
+                    Alemanha...
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>
+        <span aria-hidden="true">&lt;&lt;</span> Powered by
+        <a href="https://www.wikipedia.org" target="_blank">Wikipedia</a>
+        <span aria-hidden="true">&gt;&gt;</span>
+      </p>
+    </footer>
+  </body>
+</html>
